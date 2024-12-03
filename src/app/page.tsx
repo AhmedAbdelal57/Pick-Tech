@@ -1,101 +1,79 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import Button from "@/components/icons/Button";
+import Heading from "@/components/icons/Heading";
+import ClientSection from "@/components/layout/clientSection";
+import ContactSection from "@/components/layout/ContactSection";
+import Customers from "@/components/layout/Customers";
+import FeturesSection from "@/components/layout/FeturesSection";
+import PricingSection from "@/components/layout/PricingSection";
+import { ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <main className="overflow-hidden pt-24 lg:pt-28 antialiased">
+      <div className="relative container ">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/bg.png"
+          width={1920}
+          height={1080}
+          alt="test"
+          className="absolute -z-50 w-full min-h-screen md:max-h-[670px] md:h-full lg:min-h-screen -top-20 left-0 opacity-10"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        {/* Home section */}
+        <section id="home" className="relative">
+          {/* bubbles light */}
+          <figure className="bubble w-96 lg:w-[520px] h-96 bg-indigo-600 top-16 -left-40" />
+          <figure className="bubble w-96 lg:w-[430px] h-96 bg-sky-600 bottom-16 md:bottom-44  -right-20 md:right-20" />
+          <div className="flex flex-col text-center space-y-12">
+            <div className="flex flex-col items-center space-y-6">
+              <p className="capitalize border border-slate-700 py-1 px-3 text-xs rounded-3xl cursor-pointer hover:border-sky-500 hover:bg-slate-800 shadow-md transition-all">
+                new features is now available.
+                <ArrowRightCircle className="inline ml-1 w-4 h-4" />
+              </p>
+              <Heading title="A CRM dashboard for engineering teams" />
+              <p className="max-w-[46rem] leading-normal sm:text-lg sm:leading-8">
+                Boost engineering team&rsquo;s productivity with Ocean CRM
+                dashboard that streamlines project management, collaboration,
+                and data-driven decision-making.
+              </p>
+              <div className="flex items-center gap-4">
+                <Button>
+                  get started
+                  <MoveRight className="w-4 h-4" />
+                </Button>
+                <Link href="#pricing">
+                  <Button variant="outline">view pricing</Button>
+                </Link>
+              </div>
+            </div>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/Hero-image.svg"
+              width={670}
+              height={370}
+              alt="banner"
+              className="mx-auto shadow-xl"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          </div>
+        </section>
+        {/* Home section */}
+        {/* Clients section */}
+        <ClientSection />
+        {/* Clients section */}
+        {/* Fetures section */}
+        <FeturesSection />
+        {/* Fetures section */}
+        {/* Pricing section */}
+        <PricingSection />
+        {/* Pricing section */}
+        {/* Customers section */}
+        <Customers />
+        {/* Customers section */}
+        {/* Contact section */}
+        <ContactSection />
+        {/* Contact section */}
+      </div>
+    </main>
   );
 }
