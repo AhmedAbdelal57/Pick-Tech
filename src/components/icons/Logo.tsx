@@ -5,7 +5,7 @@ import React from "react";
 const Logo = () => {
   return (
     <Link href="/" className="flex items-end gap-2">
-      <Image src="/logo.png" alt="logo" width={30} height={30} />
+      <Image src="/logo1.png" alt="logo" width={30} height={30} />
       <div className="relative">
         <h1 className="capitalize text-white text-2xl font-bold tracking-wide">
           {" "}

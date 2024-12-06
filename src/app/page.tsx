@@ -32,11 +32,11 @@ export default function Home() {
                 new features is now available.
                 <ArrowRightCircle className="inline ml-1 w-4 h-4" />
               </p>
-              <Heading title="A CRM dashboard for engineering teams" />
+              <Heading title="Transform Your Premium environment" />
+              <Heading title=" with the perfect solution" />
               <p className="max-w-[46rem] leading-normal sm:text-lg sm:leading-8">
-                Boost engineering team&rsquo;s productivity with Ocean CRM
-                dashboard that streamlines project management, collaboration,
-                and data-driven decision-making.
+                Fully integrated solution allowing you to take the lead of your
+                industry &rsquo;
               </p>
               <div className="flex items-center gap-4">
                 <Button>
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/Hero-image.svg"
+              src="/cards/card-02.jpg"
               width={670}
               height={370}
               alt="banner"
@@ -68,7 +68,7 @@ export default function Home() {
         <PricingSection />
         {/* Pricing section */}
         {/* Customers section */}
-        <Customers />
+        {/* <Customers /> */}
         {/* Customers section */}
         {/* Contact section */}
         <ContactSection />

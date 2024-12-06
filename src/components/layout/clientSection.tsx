@@ -7,19 +7,21 @@ const ClientSection = () => {
     <div>
       {/* Clients section */}
       <section
-        id="clients"
-        className="max-w-[62rem] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-12 gap-y-4"
+        id="Customers"
+        className="max-w-[300px] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-4"
       >
         {clients.map((client, index) => (
-          <div key={index} className="text-center">
+          <div
+            key={index}
+            className="text-center flex flex-col justify-around items-center"
+          >
             <Image
               src={client.imageUrl}
-              width={120}
-              height={80}
+              width={100}
+              height={100}
               alt={client.alt}
               className="w-40 md:w-full mx-auto"
             />
-            <p className="mt-2 text-sm text-gray-600">{client.alt}</p>
           </div>
         ))}
       </section>

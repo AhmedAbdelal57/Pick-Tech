@@ -1,7 +1,5 @@
 import React from "react";
 import Heading from "../icons/Heading";
-import Button from "../icons/Button";
-import { MoveRight } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -12,15 +10,12 @@ const ContactSection = () => {
           <div className="flex flex-col gap-4 text-center lg:text-start">
             <Heading title="Let’s try our service now!" />
             <p className="max-w-[35rem] leading-normal text-lg">
-              Experience the power of Ocean CRM dashboard for engineering teams.
-              Boost productivity and streamline collaboration. Get started
-              today!
+              Please send an email to{" "}
+              <span className="font-bold text-white">
+                picktech2024@gmail.com
+              </span>
             </p>
           </div>
-          <Button>
-            get started
-            <MoveRight className="w-4 h-4" />
-          </Button>
         </div>
       </section>
       {/* Contact section */}

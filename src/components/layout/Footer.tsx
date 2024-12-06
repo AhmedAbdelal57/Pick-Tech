@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "@/components/icons/Logo";
 import { Facebook, Github, Instagram, Twitter, Youtube } from "lucide-react";
-import { footerColumns } from "@/constants/footer-links";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,8 +36,8 @@ const Footer = () => {
   return (
     <footer className="pt-20 pb-4">
       {/* Links Section */}
-      <div className="container mb-12 flex flex-col lg:flex-row">
-        {/* Logo and Social Links */}
+      {/* <div className="container mb-12 flex flex-col lg:flex-row">
+        {/* Logo and Social Links 
         <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
           <Logo />
           <p className="text-lg">
@@ -62,7 +61,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Footer Links */}
+        {/* Footer Links 
         <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8">
           {footerColumns.map((col, index) => (
             <article
@@ -87,12 +86,12 @@ const Footer = () => {
             </article>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Copyright Section */}
-      <div className="container border-t border-slate-700">
+      <div className="container border-t border-slate-700 text-center">
         <p className="capitalize pt-4 text-center lg:text-start">
-          {`© ${currentYear} Ocean, Inc. All rights reserved.`}
+          {`© ${currentYear} Picktech, Inc. All rights reserved.`}
         </p>
       </div>
     </footer>
