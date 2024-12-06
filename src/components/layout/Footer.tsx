@@ -1,37 +1,10 @@
 import React from "react";
-import Logo from "@/components/icons/Logo";
-import { Facebook, Github, Instagram, Twitter, Youtube } from "lucide-react";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    {
-      icon: <Facebook className="social-link" />,
-      href: "https://www.facebook.com/",
-      label: "Facebook",
-    },
-    {
-      icon: <Instagram className="social-link" />,
-      href: "https://www.instagram.com/",
-      label: "Instagram",
-    },
-    {
-      icon: <Twitter className="social-link" />,
-      href: "https://twitter.com/",
-      label: "Twitter",
-    },
-    {
-      icon: <Github className="social-link" />,
-      href: "https://github.com/",
-      label: "Github",
-    },
-    {
-      icon: <Youtube className="social-link" />,
-      href: "https://www.youtube.com/",
-      label: "YouTube",
-    },
-  ];
+  
 
   return (
     <footer className="pt-20 pb-4">
